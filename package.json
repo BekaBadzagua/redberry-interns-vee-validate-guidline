@@ -9,6 +9,7 @@
     "format": "prettier .  --write"
   },
   "dependencies": {
+    "@vee-validate/i18n": "^4.5.11",
     "@vee-validate/rules": "^4.5.11",
     "vee-validate": "^4.5.11",
     "vue": "^3.2.36",

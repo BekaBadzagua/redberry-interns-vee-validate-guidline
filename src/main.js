@@ -2,8 +2,9 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 
-// [!] File Where we've decalared Global Rules
-import "./config/vee-validate-rules";
+// [!] Files Where we've decalared Global Rules & messages
+import "./config/vee-validate/rules";
+import "./config/vee-validate/messages";
 
 const app = createApp(App);
 app.use(router);

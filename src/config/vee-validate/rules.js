@@ -1,18 +1,18 @@
 // ===============================================================================================
 // ===============================================================================================
-//                              Vee-Validate & @vee-validate/rules
+// strategy #1                    Vee-Validate & @vee-validate/rules
 // ===============================================================================================
 // ===============================================================================================
-import { defineRule } from 'vee-validate'; // npm install vee-validate --save
-import { required, email, min } from '@vee-validate/rules'; // npm install @vee-validate/rules
+import { defineRule } from "vee-validate"; // npm install vee-validate --save
+import { required, email, min } from "@vee-validate/rules"; // npm install @vee-validate/rules
 
-defineRule('required', required);
-defineRule('email', email);
-defineRule('min', min);
+defineRule("required", required);
+defineRule("email", email);
+defineRule("min", min);
 
 // ===============================================================================================
 // ===============================================================================================
-//                      Or you can also globally define all the available rules 
+//  strategy #2        Or you can also globally define all the available rules
 //                              in the @vee-validate/rules package:
 // ===============================================================================================
 // ===============================================================================================
@@ -28,7 +28,7 @@ defineRule('min', min);
 //
 // ===============================================================================================
 // ===============================================================================================
-//                             You can also declare your custom rules:
+//   strategy #3                You can also declare your custom rules:
 // ===============================================================================================
 // ===============================================================================================
 //

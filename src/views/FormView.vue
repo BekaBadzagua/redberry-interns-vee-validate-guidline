@@ -3,19 +3,19 @@
     <h2>Vee-Validate</h2>
     <Form @submit="onSubmit">
       <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <Field name="email" type="email" rules="required|email" />
         <ErrorMessage name="email" />
       </div>
 
       <div class="form-group">
-        <label for="username">username</label>
+        <label for="username">username:</label>
         <Field name="username" type="username" rules="required|min-length:3" />
         <ErrorMessage name="username" />
       </div>
 
       <div class="form-group">
-        <label for="password">password</label>
+        <label for="password">password:</label>
         <Field name="password" type="password" rules="required" />
         <ErrorMessage name="password" />
       </div>
