@@ -10,13 +10,13 @@
 
       <div class="form-group">
         <label for="username">username:</label>
-        <Field name="username" type="username" rules="required|min-length:3" />
+        <Field name="username" type="username" rules="required|min:3" />
         <ErrorMessage name="username" />
       </div>
 
       <div class="form-group">
         <label for="password">password:</label>
-        <Field name="password" type="password" rules="required" />
+        <Field name="password" type="password" rules="required|min:4" />
         <ErrorMessage name="password" />
       </div>
 
