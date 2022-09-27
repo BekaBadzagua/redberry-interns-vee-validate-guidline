@@ -1,6 +1,8 @@
 // ===============================================================================================
 // ===============================================================================================
-// strategy #1                    Vee-Validate & @vee-validate/rules
+// strategy #1
+//                              Vee-Validate & @vee-validate/rules
+//  if you need few rules, and want to declare them in more readable way, it's the best approach
 // ===============================================================================================
 // ===============================================================================================
 import { defineRule } from "vee-validate"; // npm install vee-validate --save
@@ -12,7 +14,8 @@ defineRule("min", min);
 
 // ===============================================================================================
 // ===============================================================================================
-//  strategy #2        Or you can also globally define all the available rules
+//  strategy #2
+//                      Or you can also globally define all the available rules
 //                              in the @vee-validate/rules package:
 // ===============================================================================================
 // ===============================================================================================
@@ -28,7 +31,9 @@ defineRule("min", min);
 //
 // ===============================================================================================
 // ===============================================================================================
-//   strategy #3                You can also declare your custom rules:
+//   strategy #3
+//                                You can also declare your custom rules:
+//                      [!] note: name of the rule should be in snake_case format
 // ===============================================================================================
 // ===============================================================================================
 //
@@ -40,7 +45,7 @@ defineRule("min", min);
 //          return true;
 //      });
 //
-//      defineRule('min-length', (value, [limit]) => {
+//      defineRule('min_length', (value, [limit]) => {
 //          // The field is empty so it should pass
 //          if (!value || !value.length) {
 //              return true;

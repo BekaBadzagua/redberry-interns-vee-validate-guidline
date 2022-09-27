@@ -14,10 +14,6 @@ const router = createRouter({
       path: "/form",
       name: "form",
       component: () => import("../views/FormView.vue"),
-    }, {
-      path: "/form-yup",
-      name: "formYup",
-      component: () => import("../views/FormYupView.vue"),
     },
     {
       path: "/about",
