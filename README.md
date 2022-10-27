@@ -6,6 +6,10 @@ There are two maind forms in this app: 'form' and 'formYup'.
 - form - is validated using global rules that are imported from @vee-validate/rules. and in the example its easy to understand how to make custom rules
 - formYup - is validated by vee-validate form schema & Yup validation package
 
+## Netlify Link
+
+https://merry-cupcake-a06c73.netlify.app/
+
 ## Tech Stack
 
 - vue 3
