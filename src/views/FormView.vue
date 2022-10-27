@@ -23,12 +23,17 @@
       <div class="form-group">
         <button>Sign up</button>
       </div>
+      <div>
+        <button @click="setLocale('en')">English</button>
+        <button @click="setLocale('ka')">ქართული</button>
+      </div>
     </Form>
   </div>
 </template>
 
 <script>
 import { Form, Field, ErrorMessage } from "vee-validate";
+import { setLocale } from "@vee-validate/i18n";
 
 export default {
   components: {
@@ -38,9 +43,14 @@ export default {
   },
   methods: {
     onSubmit(values) {
-      console.log(values, null, 2);
+      console.log(values);
       alert("Everything is Valid");
     },
+    setLocale,
+    // // Code above is same as this, but shorter
+    // setLocale(locale) { // our method to use when we click the buttons
+    //   setLocale(locale); // from "@vee-validate/i18n";
+    // },
   },
 };
 </script>
