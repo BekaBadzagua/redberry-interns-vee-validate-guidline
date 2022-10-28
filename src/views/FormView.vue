@@ -10,7 +10,7 @@
 
       <div class="form-group">
         <label for="username">username:</label>
-        <Field name="username" type="username" rules="required|min:3" />
+        <Field name="username" type="text" rules="required|min:3" />
         <ErrorMessage name="username" />
       </div>
 
